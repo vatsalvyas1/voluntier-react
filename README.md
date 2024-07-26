@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# VolunTier
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+VolunTier is a web application designed to connect volunteers with NGOs, providing a platform for managing events, donations, and community interactions.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+# 1\. Authentication -
 
-### `npm start`
+Firebase Authentication: Users can log in and sign up using their Google accounts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 2\. Sections -
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Home
 
-### `npm test`
+Overview of the application and its purpose.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Donate
 
-### `npm run build`
+Users can donate items or money.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Redirects to a payment gateway for monetary donations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Community
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+NGOs can add posts about past events.
 
-### `npm run eject`
+Volunteers can like or comment on these posts.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Events
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+NGOs can add events.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Volunteers can join events.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Event data is stored in Firestore, and event thumbnails and media are stored in Firebase Storage.
 
-## Learn More
+- Our Team
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Information about the team behind VolunTier.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 3\. Profile
 
-### Code Splitting
+Displays user details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Shows events joined by volunteers or hosted by NGOs.
 
-### Analyzing the Bundle Size
+Allows users to edit their profiles, including uploading a profile image from their Google account or a local file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Hosted Events Button: Shows the events hosted by an NGO user.
 
-### Making a Progressive Web App
+Events Joined Button: Shows the events a volunteer has joined.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 4\. Technologies Used
 
-### Advanced Configuration
+- Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+React: JavaScript library for building user interfaces.
 
-### Deployment
+Tailwind CSS: Utility-first CSS framework for styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Multi Carousel: React library for carousels.
 
-### `npm run build` fails to minify
+React Player: Library to display videos by taking URLs from users.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Backend
+
+Firestore Database: NoSQL database for storing user and event data.
+
+Firebase Storage: Cloud storage for storing event thumbnails and other media.
+
+- Authentication
+
+Firebase Authentication: Handles user authentication via Google accounts.
+
+# 5\. Collections in Firestore
+
+- NGOUsers: Stores details of NGO users.
+
+- VolunteerUsers: Stores details of volunteer users.
+
+- event_volunteers: Stores information about volunteers who joined events.
+
+- Posts: Stores posts created by NGOs, with subcollections for likes and comments.
+
+- events: Stores details of events created by NGOs.
