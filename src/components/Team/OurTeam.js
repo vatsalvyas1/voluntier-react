@@ -65,7 +65,7 @@ function OurTeam() {
           }}
           className='h-48 w-48 mx-auto mb-4'></div>
           <h3 className='text-2xl font-medium'>Prince Jha</h3>
-          <h5 className='text-xl text-slate-600'>UI/UX Designer</h5>
+          <h5 className='text-xl text-slate-600'>Project Lead</h5>
           <p className='text-xl'><a href="https://www.linkedin.com/in/prince-jha-2a34502b7/"><i class="fa-brands fa-linkedin"></i> </a> <a href="https://www.instagram.com/the_rajkumarrr/"><i class="fa-brands fa-instagram"></i></a></p>
         </div>
 
