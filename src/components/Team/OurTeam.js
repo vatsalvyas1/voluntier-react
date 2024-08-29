@@ -3,6 +3,8 @@ import rajat from '../../assests/images/rajat.jpg'
 import vatsal from '../../assests/images/vatsal.jpg'
 import prince from '../../assests/images/prince.jpg'
 import aayushi from '../../assests/images/aayushi.jpg'
+import itish from '../../assests/images/itish.jpg'
+import archit from '../../assests/images/archit.jpg'
 
 function OurTeam() {
   return (
@@ -44,13 +46,13 @@ function OurTeam() {
         <div className='grow mr-4 mb-4 p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:scale-105 hover:shadow-custom-kaala transition-all duration-1000 ease-in-out'>
           <div 
           style={{
-            backgroundImage: `url(${aayushi})`,
+            backgroundImage: `url(${archit})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             borderRadius : "70% 30% 51% 49% / 41% 38% 62% 59% "
           }}
           className='h-48 w-48 mx-auto mb-4'></div>
-          <h3 className='text-2xl font-medium'>Aayushi Sharma</h3>
+          <h3 className='text-2xl font-medium'>Archit Chaudhary</h3>
           <h5 className='text-xl text-slate-600'>Developer</h5>
           <p className='text-xl'><a href="https://www.linkedin.com/in/aayushi-sharma-8ab2942b7/"><i class="fa-brands fa-linkedin"></i> </a> <a href="https://instagram.com/_.aayushi03"><i class="fa-brands fa-instagram"></i></a></p>
         </div>
@@ -58,14 +60,14 @@ function OurTeam() {
         <div className='grow mr-4 mb-4 p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:scale-105 hover:shadow-custom-kaala transition-all duration-1000 ease-in-out'>
           <div 
           style={{
-            backgroundImage: `url(${prince})`,
+            backgroundImage: `url(${itish})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             borderRadius : "66% 34% 28% 72% / 69% 70% 30% 31% "
           }}
           className='h-48 w-48 mx-auto mb-4'></div>
-          <h3 className='text-2xl font-medium'>Prince Jha</h3>
-          <h5 className='text-xl text-slate-600'>Project Lead</h5>
+          <h3 className='text-2xl font-medium'>Itish Sharma</h3>
+          <h5 className='text-xl text-slate-600'>Developer</h5>
           <p className='text-xl'><a href="https://www.linkedin.com/in/prince-jha-2a34502b7/"><i class="fa-brands fa-linkedin"></i> </a> <a href="https://www.instagram.com/the_rajkumarrr/"><i class="fa-brands fa-instagram"></i></a></p>
         </div>
 
