@@ -44,7 +44,7 @@ function OurTeam() {
         <div className='grow mr-4 mb-4 p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:scale-105 hover:shadow-custom-kaala transition-all duration-1000 ease-in-out'>
           <div 
           style={{
-            backgroundImage: `url(${archit})`,
+            backgroundImage: `url(${aayushi})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             borderRadius : "70% 30% 51% 49% / 41% 38% 62% 59% "
